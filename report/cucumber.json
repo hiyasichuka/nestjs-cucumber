@@ -1,0 +1,76 @@
+[
+  {
+    "description": "  System returns a greeting",
+    "elements": [
+      {
+        "description": "",
+        "id": "greeting;basic-usage",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Basic usage",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 81844
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I call Greeting API",
+            "match": {
+              "location": "test/features/support/steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19146681
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "The HTTP status code is 200",
+            "match": {
+              "location": "test/features/support/steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1571666
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n  \"message\": \"Hello World!\"\n}",
+                "line": 8
+              }
+            ],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "The response body is:",
+            "match": {
+              "location": "test/features/support/steps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2752448
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "greeting",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Greeting",
+    "tags": [],
+    "uri": "test/features/app.e2e.feature"
+  }
+]
